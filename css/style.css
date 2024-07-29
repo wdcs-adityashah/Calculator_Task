@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    min-height: 100vh;
+    height: 100%;
+}
+tr{
+    display: table-row-group;
+}
+tbody{
+    display: block;
+    padding: 20px;
+}
+.header{
+    display: table-row-group;
+    margin-bottom: 10px;
+}
+.main_display{
+    border: none; 
+    border-radius: 5px; 
+    border: 2px solid black; 
+    padding: 10px;
+}
+table { 
+    border: 1px solid black; 
+    margin-left: auto; 
+    margin-right: auto; 
+} 
+
+input[type="button"] { 
+   
+    padding: 20px 40px; 
+    background-color: green; 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+} 
+
+.header input[type="text"] { 
+    padding: 20px 30px; 
+    /* font-size: 24px; 
+    font-weight: bold;  */
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+} 
+.header input[type="text"]:focus{
+    border: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+.non_header{
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+.non_header td{
+    flex: 1;
+} 
+.non_header td input[type="button"]{
+    width: 100%;
+}
+.non_header:last-child td{
+    margin-bottom: 0px;
+}
+.bmi_calc{
+    margin:20px 0px;
+}
+.bmi_calc p{
+    margin-bottom: 20px;
+}
+.bmi_calc input[type="text"]{
+    margin-bottom: 20px;
+}
+.simple_calc{
+    margin: 40px 0px;
+}

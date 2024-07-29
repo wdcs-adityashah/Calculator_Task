@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <table id="calcu">
+     <tr class="header">
+        <td colspan="3" class="main_display">
+            <input type="text" id="result">
+            <input type="button" value="⌫" onclick="backspace()" style="background-color: black;">
+        </td>
+        <td><input type="button" value="c" onclick="clr()" onkeydown="myfunction(event)"></td>
+     </tr>
+     <tr class="non_header">
+        <td><input type="button" value="1" onclick="dis('1')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="2" onclick="dis('2')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="3" onclick="dis('3')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="/" onclick="dis('/')" onkeydown="myfunction(event)"></td>
+        
+     </tr>
+     <tr class="non_header">
+        <td><input type="button" value="4" onclick="dis('4')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="5" onclick="dis('5')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="6" onclick="dis('6')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="*" onclick="dis('*')" onkeydown="myfunction(event)"></td>
+     </tr>
+     <tr class="non_header">
+        <td><input type="button" value="7" onclick="dis('7')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="8" onclick="dis('8')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="9" onclick="dis('9')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="-" onclick="dis('-')" onkeydown="myfunction(event)"></td>
+     </tr>
+     <tr class="non_header">
+        <td><input type="button" value="0" onclick="dis('0')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="." onclick="dis('.')" onkeydown="myfunction(event)"></td>
+        <td><input type="button" value="=" onclick="solve()"></td>
+        <td><input type="button" value="+" onclick="dis('+')" onkeydown="myfunction(event)"></td>
+     </tr>
+    </table>
+    <div class="bmi_calc" style="background-color: rgb(244,245,244);">
+     <div class="container">
+      <h1>BMI calculator</h1>
+      <p>Height (in cm)</p>
+      <input type="text" id="height">
+      <p>Weight (in kg)</p>
+      <input type="text" id="weight">
+      <button id="btn">Calculate</button>
+      <div id="result_bmi"></div>
+    </div>
+   </div>
+   
+   <script src="promise.js"></script>
+    <script src="object.js"></script>
+    <script src="calculator.js"></script>
+    <script src="bmi_calculator.js"></script>
+</body>
+</html>
